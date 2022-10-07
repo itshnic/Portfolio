@@ -1,23 +1,3 @@
-//<Menu-scroll>
-const menuScroll = function () {
-	const header = document.querySelector(".header__wrapper"),
-		headerH = header.clientHeight,
-		mainAuthor = document.querySelector(".main-author");
-
-	document.onscroll = function () {
-		const scroll = window.scrollY;
-		if (scroll > headerH + 15) {
-			header.classList.add("fixed-header");
-			mainAuthor.classList.add("padding-fixed");
-		} else {
-			header.classList.remove("fixed-header");
-			mainAuthor.classList.remove("padding-fixed");
-		}
-	};
-};
-menuScroll();
-//</Menu-scroll>
-
 //<Burger>
 const burger = function () {
 	const icon = document.querySelector("._burger-cross");

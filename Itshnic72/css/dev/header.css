@@ -33,13 +33,6 @@ main {
   margin: 0 auto;
 }
 
-.fixed-header {
-  position: fixed;
-  -webkit-transform: translateY(100px);
-      -ms-transform: translateY(100px);
-          transform: translateY(100px);
-}
-
 .header__wrapper {
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -49,6 +42,10 @@ main {
   left: 0;
   right: 0;
   z-index: 10;
+  position: fixed;
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
 }
 
 .header-menu {

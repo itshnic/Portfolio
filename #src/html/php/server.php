@@ -25,11 +25,11 @@ $mail->Username = 'setoff_hr@bk.ru';
 $mail->Password = 'Coffee2020';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
-$mail->setFrom('setoff_hr@bk.ru', 'Scooter'); //от Кого
+$mail->setFrom('setoff_hr@bk.ru', 'PORTFOLIO'); //от Кого
 //Кому
-$mail->addAddress('rv920490@mail.com', 'Admin');
+$mail->addAddress('rv920490@gmail.com', 'Admin');
 $mail->Subject = "Письмо из Portfolio";
-$mail->Body    = "Телефон: " . $tel . " Имя: " . $name . "Почта" . $userMail . "Сообщение" . $userMessage;
+$mail->Body    = "Телефон: " . $tel . "; Имя: " . $name . "; Почта: " . $userMail . "; Сообщение: " . $userMessage;
 
 function control($item)
 {
